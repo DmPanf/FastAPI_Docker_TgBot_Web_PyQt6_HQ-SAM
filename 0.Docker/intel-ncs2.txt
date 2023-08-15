@@ -1,0 +1,15 @@
+[Сервер + Intel NCS2]
+  |
+  |---[Docker]
+       |
+       |--[FastAPI & Web-клиент]
+       |       |
+       |       |--(Общение с клиентами через REST API)
+       |
+       |--[AIOGram Telegram Bot]
+       |       |
+       |       |--(Общение с Telegram пользовательми)
+       |
+       |--[YOLOv8+SAM|HQ-SAM Нейронная модель]
+               |
+               |--(Использует Intel Neural Compute Stick 2 для инференции)
