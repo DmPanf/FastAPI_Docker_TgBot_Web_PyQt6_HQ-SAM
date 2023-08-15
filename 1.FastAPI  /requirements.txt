@@ -1,0 +1,4 @@
+fastapi==0.65.2
+uvicorn==0.14.0
+aiofiles==0.6.0
+httpx==0.18.1
