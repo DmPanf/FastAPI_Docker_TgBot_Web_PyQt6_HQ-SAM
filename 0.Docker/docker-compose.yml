@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  fastapi:
+    build:
+      context: .
+      dockerfile: Dockerfile-fastapi
+    ports:
+      - "8000:8000"
+    volumes:
+      - shared_data:/app/data
+    networks:
+      - internal_net
+
+  aiogram_bot:
+    build:
+      context: .
+      dockerfile: Dockerfile-aiogram
+    volumes:
+      - shared_data:/bot/data
+    networks:
+      - internal_net
+
+  yolo:
+    build:
+      context: .
+      dockerfile: Dockerfile-yolo
+    runtime: nvidia
+    volumes:
+      - shared_data:/yolo/data
+    networks:
+      - internal_net
+
+networks:
+  internal_net:
+    driver: bridge
+
+volumes:
+  shared_data:
