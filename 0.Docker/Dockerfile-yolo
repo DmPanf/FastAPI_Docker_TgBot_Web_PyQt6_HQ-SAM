@@ -1,0 +1,14 @@
+# Dockerfile-yolo
+FROM nvidia/cuda:11.0-base
+
+WORKDIR /yolo
+
+COPY ./yolo_model /yolo
+
+# Устанавливаем зависимости для YOLO и какие-либо другие необходимые инструменты
+RUN apt-get update && apt-get install -y \
+    python3.8 \
+    python3-pip && \
+    pip install --no-cache-dir -r requirements.txt
+
+CMD ["python", "yolo_inference.py"]
