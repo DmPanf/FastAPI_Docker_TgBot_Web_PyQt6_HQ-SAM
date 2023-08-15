@@ -1,0 +1,10 @@
+# Dockerfile-aiogram
+FROM python:3.8
+
+WORKDIR /bot
+
+COPY ./aiogram_bot /bot
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+CMD ["python", "bot.py"]
