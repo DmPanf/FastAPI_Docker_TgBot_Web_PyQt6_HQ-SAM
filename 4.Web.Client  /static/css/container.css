@@ -1,0 +1,35 @@
+.container {
+    justify-content: center;  /* центрирование по горизонтали */
+    align-items: center;      /* центрирование по вертикали */
+    flex-direction: column;   /* элементы выстраиваются в колонну */
+    flex-wrap: wrap;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(106,69,149, 0.1); /* Тень вокруг контейнера */
+}
+
+
+.main-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;  /* центрирование элементов в каждой ячейке сетки */
+    /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+    gap: 15px; /* Расстояние между колонками */
+}
+
+.control-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Промежутки между элементами */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(106,69,149, 0.1); /* Тень вокруг контейнера */
+    border-radius: 5px; /* Скругление углов */
+    background-color: #fff; /* Белый фон */
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
