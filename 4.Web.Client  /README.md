@@ -95,7 +95,7 @@ MIT License
 
 ---
 
-### Recommended project directory structure presented in text form:
+### 📜 Recommended project directory structure presented in text form:
 
 ```
 Project-Title/
