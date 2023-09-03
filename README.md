@@ -11,7 +11,7 @@ PyQt6 client based on FastAPI Integration for HQ-SAM Object Detection
 <details>
 <summary><h3>💠 Пример работы через FastAPI Swagger UI</h3></summary>
 <p align="center">
-<img src="https://raw.githubusercontent.com/DmPanf/PyQt6_FastAPI_HQ-SAM/main/images/swagger-01.jpg" width="60%" />
+<img src="https://raw.githubusercontent.com/DmPanf/PyQt6_FastAPI_HQ-SAM/main/images/swagger-01.jpg" width="90%" />
 </p>
 </details>
 
@@ -29,6 +29,6 @@ PyQt6 client based on FastAPI Integration for HQ-SAM Object Detection
 <details>
 <summary><h3>🌐 Пример web-клиента (HTML+JavaScript+CSS)</h3></summary>
 <p align="center">
-<img src="https://raw.githubusercontent.com/DmPanf/PyQt6_FastAPI_HQ-SAM/main/images/web-client-01.jpg" width="60%" />
+<img src="https://raw.githubusercontent.com/DmPanf/PyQt6_FastAPI_HQ-SAM/main/images/web-client-01.jpg" width="90%" />
 </p>
 </details>
