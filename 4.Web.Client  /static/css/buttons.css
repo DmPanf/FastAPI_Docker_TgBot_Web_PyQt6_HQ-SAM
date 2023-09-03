@@ -1,0 +1,42 @@
+button, #uploadButton, select.button-width {
+    display: inline-block;
+    padding: 15px 32px;
+    background-color: #8847ff; /* Яркий фиолетовый цвет */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s; /* Плавный переход */
+}
+
+button:hover, #uploadButton:hover, select.button-width:hover {
+    background-color: #6a4595; /* Темно-фиолетовый цвет */
+}
+
+#fileInput {
+    display: none;
+}
+
+#dropZone {
+    background-color: #fff;
+    border: 2px dashed #6a4595; /* Темно-фиолетовый цвет */
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 120px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.3s; /* Плавный переход */
+}
+
+#dropZone:hover {
+    background-color: #ece6ff; /* Легкий фиолетовый цвет */
+}
