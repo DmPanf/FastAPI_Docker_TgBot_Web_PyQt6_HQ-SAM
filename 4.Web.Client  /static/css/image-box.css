@@ -1,0 +1,19 @@
+.image-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(106,69,149, 0.1); /* Тень вокруг изображения */
+    margin-bottom: 20px;
+    width: 79%;
+    box-sizing: border-box;
+}
+
+/* Измененный код для адаптивности */
+/*.image-box {*/
+/*    width: 100%; /* Изменено с 49% на 100% */
+/*}*/
+
+img {
+  width: 20vw;  /* изображение будет шириной в 50% от ширины окна */
+  height: auto;
+}
