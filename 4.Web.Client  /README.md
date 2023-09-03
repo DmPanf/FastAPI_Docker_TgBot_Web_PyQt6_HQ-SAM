@@ -14,10 +14,6 @@
 
 ---
 
-Certainly, here's a sample README.md file to describe your project and technologies. Feel free to add more specific details as needed.
-
----
-
 ## Project Title: Real-time Object Detection with YOLOv8 and FastAPI 📄🤖
 
 ### Description 🌐
@@ -47,7 +43,7 @@ This project aims to implement real-time object detection using YOLOv8 and FastA
 
 1. Clone this repository
     ```bash
-    git clone https://github.com/your-repo.git
+    git clone https://github.com/DmPanf/FastAPI_Docker_TgBot_Web_PyQt6_HQ-SAM.git
     ```
 
 2. Navigate to the project folder
@@ -64,7 +60,7 @@ This project aims to implement real-time object detection using YOLOv8 and FastA
 
 1. Clone this repository
     ```bash
-    git clone https://github.com/your-repo.git
+    git clone https://github.com/DmPanf/FastAPI_Docker_TgBot_Web_PyQt6_HQ-SAM.git
     ```
 
 2. Install Python dependencies
