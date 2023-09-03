@@ -94,3 +94,48 @@ The project uses a Dockerfile based on the TensorFlow GPU Jupyter image. It sets
 MIT License
 
 ---
+
+### Recommended project directory structure presented in text form:
+
+```
+Project-Title/
+│
+├── app/                        # FastAPI app directory
+│   ├── main.py                 # FastAPI main app
+│   ├── models/                 # Machine learning models (e.g., YOLOv8)
+│   ├── utils/                  # Utility scripts and helper functions
+│   └── routes/                 # API routes
+│
+├── frontend/                   # Frontend related files
+│   ├── index.html              # Main HTML page
+│   ├── js/                     # JavaScript files
+│   └── css/                    # Stylesheets
+│
+├── docker-compose.yml          # Docker Compose configuration file
+├── Dockerfile                  # Dockerfile for building the project image
+│
+├── scripts/
+│   └── api_request.py          # Python script for testing API
+│
+├── requirements.txt            # Python dependencies
+│
+└── README.md                   # Project description and instructions
+```
+
+- `app/` contains the FastAPI application files, where `main.py` is the entry point.
+- `app/models/` will contain your machine learning models like YOLOv8.
+- `app/utils/` can contain any utility scripts and helper functions.
+- `app/routes/` can contain individual route definitions for the FastAPI app.
+  
+- `frontend/` contains all the frontend related files like HTML, CSS, and JavaScript.
+
+- `docker-compose.yml` contains the Docker Compose configuration to manage containers.
+  
+- `Dockerfile` is used for building your Docker image.
+
+- `scripts/` can contain utility scripts like `api_request.py` that are not part of the main application but are useful for tasks like API testing.
+
+- `requirements.txt` lists all the Python dependencies required for your project.
+
+
+This is a general structure and could vary depending on the specific requirements of the project.
