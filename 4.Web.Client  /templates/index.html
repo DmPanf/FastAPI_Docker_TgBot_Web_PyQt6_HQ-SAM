@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🩻 Project: Screening System [2023]</title>
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/container.css">
+    <link rel="stylesheet" href="/static/css/buttons.css">
+    <link rel="stylesheet" href="/static/css/image-box.css">
+    <link rel="stylesheet" href="/static/css/utility.css">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <style>
+        .main-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .button-container, #dropZone, #modelSelect {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <center><h2>Система досмотра СРК "Express Inspection"</h2>
+        <div><b>
+            <input type="radio" id="server1" name="server" value="http://api-serv.ru:8001" checked>
+            <label for="server1">🖥 Сервер Основной</label></b>
+            <input type="radio" id="server2" name="server" value="http://api-serv.ru:8001">
+            <label for="server3">🖥 Резервный Сервер</label>
+        </div>
+        </center>
+    </header>
+    <main>
+    <div class="main-container">
+      <div class="control-container">
+        <h5>🎛  Управление (выбор нейро-модели):</h5>
+        <div class="button-container">
+          <select id="modelSelect" class="button-width">
+              {% for model in models %}
+                  <option value="{{ model }}">🪩 Модель: <b>{{ model }}</b></option>
+              {% endfor %}
+          </select>
+        </div>
+        <div class="button-container">
+            <input type="file" id="fileInput" accept=".jpg,.jpeg,.png" hidden>
+            <label for="fileInput" id="uploadButton" class="button-width">💾 Выбрать файл</label>
+        </div>
+        <div class="button-container">
+            <div id="dropZone" class="button-width">.. или перетащить изображение сюда</div>
+        </div>
+        <div class="button-container">
+            <button onclick="predict()" id="processButton" class="button-width">📡 Отправить в обработку</button>
+        </div>
+        <div class="button-container">
+            <button onclick="saveimg()" id="saveButton" class="button-width">📥 Сохранить полученное изображение</button>
+        </div>
+        <!-- Поле для вывода информации -->
+        <div id="info-box">
+            <!-- Информация с сервера будет добавлена здесь -->
+        </div>
+      </div>
+      <div class="image-box" id="originalImageContainer">
+        <h5>1️⃣  Оригинальное изображение</h5>
+        <img id="originalImage">
+      </div>
+      <div class="image-box" id="segmentedImageContainer">
+        <h5>2️⃣  Обработанное изображение</h5>
+        <img id="processedImage">
+      </div>
+    </div>
+    </main>
+    <footer>
+        <center><p>&copy; 2023 Screening System. Все права защищены.</p></center>
+    </footer>
+    <script src="/static/js/scripts.js"></script>
+    <script src="/static/js/info.js"></script>
+</body>
+</html>
