@@ -1,0 +1,9 @@
+.button-width {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button-container {
+    width: 100%; /* Делаем все элементы одной ширины */
+    margin-bottom: 1rem; /* Промежуток между кнопками */
+}
