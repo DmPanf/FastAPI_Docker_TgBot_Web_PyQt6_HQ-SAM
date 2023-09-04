@@ -1,0 +1,16 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  fastapi-yolo-client:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./data:/app/data  # монтируем уже существующий volume для данных
+      - .:/app/bot        # монтируем код бота
+    env_file:
+      - .env
+#    restart: always
+    environment:
+      - PYTHONUNBUFFERED=1  # Python не будет буферизовать вывод: поможет видеть логи и другой вывод приложения в реальном времени
