@@ -1,0 +1,7 @@
+# requirements.txt 
+aiogram==2.11.2
+aiohttp
+python-dotenv
+numpy
+PILLOW
+requests
