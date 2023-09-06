@@ -1,0 +1,16 @@
+{
+    "servers": [
+        {
+            "name": "Server 1",
+            "url": "http://api-serv.ru:8001"
+        },
+        {
+            "name": "Server 2",
+            "url": "hhttp://ai-serv.ru:8001"
+        },
+        {
+            "name": "Server 3",
+            "url": "http://195.91.179.130:33021"
+        }
+    ]
+}
