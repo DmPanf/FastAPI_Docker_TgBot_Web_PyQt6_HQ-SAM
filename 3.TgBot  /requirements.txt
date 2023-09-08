@@ -3,5 +3,5 @@ aiogram==2.11.2
 aiohttp
 python-dotenv
 numpy
-PILLOW
+Pillow
 requests
