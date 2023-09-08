@@ -4,18 +4,24 @@ import logging
 import requests
 import asyncio
 import aiohttp
+from aiohttp import ClientSession
 import json
 from dotenv import load_dotenv
 from io import BytesIO
 from datetime import datetime
 from PIL import Image
 import os
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
+
 
 # Load environment variables
 load_dotenv()
 API_TOKEN = os.getenv("TOKEN")
 ADMIN_CHAT_ID = os.getenv("CHAT_ID")
-API_URL = 'http://api-serv.ru:8001/models'
+#API_URL = 'http://api-serv.ru:8001/models'
+API_URL = 'http://195.91.179.130:33021'
 
 if not API_TOKEN:
     raise ValueError("TG_TOKEN is not set in the environment variables or .env file!")
@@ -51,7 +57,7 @@ async def fetch(session, url):
 @dp.message_handler(commands=['start'])
 async def send_info(message: types.Message):
     async with aiohttp.ClientSession() as session:
-        info = await fetch(session, API_URL)
+        info = await fetch(session, f'{API_URL}/info')
         await message.answer(f"Project Info:\n{info}")
 
 
@@ -79,7 +85,7 @@ async def send_models(message: types.Message):
     async with aiohttp.ClientSession() as session:
         # Загрузка списка моделей с помощью функции fetch(), которая выполняет GET-запрос.
         # API_URL должна быть предварительно определена или передана как аргумент.
-        models_list = json.loads(await fetch(session, API_URL))
+        models_list = json.loads(await fetch(session, f'{API_URL}/models'))
 
         # Создание разметки для inline-кнопок
         markup = InlineKeyboardMarkup()
@@ -100,19 +106,33 @@ async def process_image(message: types.Message):
     file_id = message.photo[-1].file_id
     file = await bot.get_file(file_id)
     file_path = file.file_path
+    print(f'1 ......... {file_path}')
 
     # Загрузка изображения
     image_data = await bot.download_file(file_path)
 
     # Отправка изображения на сервер
-    url = API_URL + 'predict'
-    response = requests.post(url, files={"image": ("input_image.png", image_data, "image/png")})
+    url = f'{API_URL}/predict'
+    print(f'2 ====== {url}')
+    async with ClientSession() as session:
+        form = aiohttp.FormData()
+        form.add_field('file', image_data, filename='input_image.jpg', content_type='image/jpg')
+        form.add_field('mdl_name', 'best2.pt')
+        try:
+            async with session.post(url, data=form, timeout=10) as response:
+                print(f'3 ====== {response.status}')
+                if response.status == 200:
+                    output_image_data = BytesIO(await response.read())
+                    output_image_data.seek(0)
+                    await message.reply_photo(photo=output_image_data, caption="Обработанное изображение")
+        except Exception as e:
+            print(f" ------ Error occurred: {e}")
 
-    if response.status_code == 200:
-        # Получение обработанного изображения и отправка его обратно пользователю
-        output_image_data = BytesIO(response.content)
-        output_image_data.seek(0)
-        await message.reply_photo(photo=output_image_data, caption="Обработанное изображение")
+    #if response.status_code == 200:
+    #    # Получение обработанного изображения и отправка его обратно пользователю
+    #    output_image_data = BytesIO(response.content)
+    #    output_image_data.seek(0)
+    #    await message.reply_photo(photo=output_image_data, caption="Обработанное изображение")
 
 
 async def main():
