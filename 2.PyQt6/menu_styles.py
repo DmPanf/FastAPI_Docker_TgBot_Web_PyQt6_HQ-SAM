@@ -1,6 +1,6 @@
 # menu_styles.py
 
-from PyQt6.QtWidgets import QPushButton
+from PyQt6.QtWidgets import QPushButton, QRadioButton
 
 # Стили для оформления виджетов и кнопок
 borderStyle = """
@@ -15,7 +15,7 @@ QPushButton {{
     background-color: darkgreen;
     padding: 10px;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     {borderStyle}
 }}
 QPushButton:hover {{
@@ -28,7 +28,7 @@ QPushButton {{
     background-color: darkgreen;
     padding: 5px;
     color: white;
-    font-size: 14px
+    font-size: 16px
 }}
 QPushButton:hover {{
     background-color: limegreen;
@@ -37,8 +37,8 @@ QPushButton:hover {{
 
 radiobtnStyle = f"""
 QRadioButton {{
-    font-size: 12px
-    padding: 5px
+    font-size: 16px
+    padding: 50px
     color: lightgreen
     background-color: darkgray
 }}
