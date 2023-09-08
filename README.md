@@ -20,7 +20,13 @@ PyQt6 client based on FastAPI Integration for HQ-SAM Object Detection
 <details>
 <summary><h3>💎 Пример клиентского интерфейса на PyQt6</h3></summary>
 <p align="center">
-<img src="https://raw.githubusercontent.com/DmPanf/PyQt6_FastAPI_HQ-SAM/main/images/pyqt6_01.jpg" width="40%" />
+<img src="https://raw.githubusercontent.com/DmPanf/PyQt6_FastAPI_HQ-SAM/main/images/qt1.jpg" width="30%" />
+<img src="https://raw.githubusercontent.com/DmPanf/PyQt6_FastAPI_HQ-SAM/main/images/qt2.jpg" width="30%" />
+<img src="https://raw.githubusercontent.com/DmPanf/PyQt6_FastAPI_HQ-SAM/main/images/qt3.jpg" width="30%" />
+  <br>
+<img src="https://raw.githubusercontent.com/DmPanf/PyQt6_FastAPI_HQ-SAM/main/images/qt4.jpg" width="30%" />
+<img src="https://raw.githubusercontent.com/DmPanf/PyQt6_FastAPI_HQ-SAM/main/images/qt5.jpg" width="30%" />
+<img src="https://raw.githubusercontent.com/DmPanf/PyQt6_FastAPI_HQ-SAM/main/images/qt6.jpg" width="30%" />
 </p>
 </details>
 
