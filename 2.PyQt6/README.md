@@ -42,7 +42,7 @@ To run the app, make sure you have Python and the required dependencies installe
 - Ensure that an image is loaded before making predictions.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.
 
 ---
 
