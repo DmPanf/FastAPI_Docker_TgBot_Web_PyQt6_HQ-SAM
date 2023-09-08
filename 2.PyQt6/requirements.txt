@@ -1,3 +1,4 @@
 PyQt6
 opencv-python
 requests
+Pillow
