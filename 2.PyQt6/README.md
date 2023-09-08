@@ -35,7 +35,7 @@ The X-Rays Model HQ-SAM App is built using the following technologies and framew
 5. Save the processed image using the "SAVE" button.
 
 ## Running the App
-To run the app, make sure you have Python and the required dependencies installed. Then, execute the `main_v31.py` script. You can choose a server by clicking the "SERVER" button.
+To run the app, make sure you have Python and the required dependencies installed. Then, execute the `main_v50.py` script. You can choose a server by clicking the "SERVER" button.
 
 ## Note
 - Make sure to select a model before predicting an image.
