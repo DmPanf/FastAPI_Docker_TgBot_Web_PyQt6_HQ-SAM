@@ -1,9 +1,54 @@
+# X-Rays Model HQ-SAM App [v2.1, 2023] 🖼️
+
+
 <details>
-<summary><h3>💾 Пример клиентского интерфейса на PyQt6</h3></summary>
+<summary><h3>💾 App Screenshot</h3></summary>
 <p align="center">
 <img src="https://raw.githubusercontent.com/DmPanf/PyQt6_FastAPI_HQ-SAM/main/images/pyqt6_01.jpg" width="40%" />
 </p>
 </details>
+
+## Overview
+The X-Rays Model HQ-SAM App is a Python application that allows you to load, predict, and save X-ray images using deep learning models. This README provides an overview of the app's features, how to use it, and the technologies it utilizes.
+
+## Features 🌟
+- Load X-ray images from your local disk.
+- Choose from a list of available deep learning models.
+- Predict and display the results on loaded images.
+- Save the processed images to your local disk.
+
+## Technologies and Frameworks 🚀
+The X-Rays Model HQ-SAM App is built using the following technologies and frameworks:
+
+- Python 🐍: The core programming language used for the application.
+- PyQt6 🖼️: A Python library for creating desktop applications with a graphical user interface.
+- FastAPI 🚀: A modern, fast, web framework for building APIs with Python.
+- Requests 📡: A Python library for making HTTP requests to the FastAPI server.
+- OS 🖥️: A Python module for working with the operating system.
+- Qt 📊: A cross-platform C++ framework for creating GUIs.
+
+## How to Use
+1. Load an X-ray image by clicking the "IMAGE LOAD" button.
+2. Choose a deep learning model from the "MODELS" dialog.
+3. Click the "PREDICT" button to run predictions on the loaded image.
+4. View the results on the screen.
+5. Save the processed image using the "SAVE" button.
+
+## Running the App
+To run the app, make sure you have Python and the required dependencies installed. Then, execute the `main_v31.py` script. You can choose a server by clicking the "SERVER" button.
+
+## Note
+- Make sure to select a model before predicting an image.
+- Ensure that an image is loaded before making predictions.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+© 2023 Your Name
+
+
 
 ---
 
