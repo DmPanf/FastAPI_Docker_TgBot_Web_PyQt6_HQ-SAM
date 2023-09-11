@@ -5,6 +5,14 @@ PyQt6 client based on FastAPI Integration for HQ-SAM Object Detection
 - **[💎 X-Rays_Model_HQ-SAM.ipynb](https://colab.research.google.com/drive/10J1WX5zXMXHki_PL_JfKqq0KZKFJJnCp?usp=sharing)**
 - **[💾 Примеры обнаружения объектов](https://github.com/alecseiterr/screening_system/blob/main/Dmitry_Panfilov/images/README.md)**
 
+---
+
+<details>
+<summary><h3>⚙️ Схема подключения удаленных клиентов к Серверам FastAPI</h3></summary>
+<p align="center">
+<img src="https://raw.githubusercontent.com/DmPanf/PyQt6_FastAPI_HQ-SAM/main/images/schema.jpg" width="95%" />
+</p>
+</details>
 
 ---
 
