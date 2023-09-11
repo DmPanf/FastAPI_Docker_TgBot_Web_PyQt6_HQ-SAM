@@ -39,6 +39,10 @@ RUN wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_o
 ENV NVIDIA_VISIBLE_DEVICES all
 ENV NVIDIA_DRIVER_CAPABILITIES compute,utility
 
+# ...
+
+```
+
 ### Создание `docker-compose.yml`
 
 ```yml
