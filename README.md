@@ -18,7 +18,7 @@ PyQt6 client based on FastAPI Integration for HQ-SAM Object Detection
 ---
 
 <details>
-<summary><h3>💎 Пример клиентского интерфейса на PyQt6</h3></summary>
+<summary><h3>💾 Пример клиентского интерфейса на PyQt6</h3></summary>
 <p align="center">
 <img src="https://raw.githubusercontent.com/DmPanf/PyQt6_FastAPI_HQ-SAM/main/images/qt1.jpg" width="30%" />
 <img src="https://raw.githubusercontent.com/DmPanf/PyQt6_FastAPI_HQ-SAM/main/images/qt2.jpg" width="30%" />
@@ -33,7 +33,7 @@ PyQt6 client based on FastAPI Integration for HQ-SAM Object Detection
 ---
 
 <details>
-<summary><h3>💾 Пример клиентского интерфейса Telegram Bot (AIOGram)</h3></summary>
+<summary><h3>💎 Пример клиентского интерфейса Telegram Bot (AIOGram)</h3></summary>
 <p align="center">
 <img src="https://raw.githubusercontent.com/DmPanf/PyQt6_FastAPI_HQ-SAM/main/images/bot1.jpg" width="48%" />
 <img src="https://raw.githubusercontent.com/DmPanf/PyQt6_FastAPI_HQ-SAM/main/images/bot2.jpg" width="48%" />
