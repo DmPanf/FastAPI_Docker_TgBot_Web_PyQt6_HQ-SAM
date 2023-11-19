@@ -1,4 +1,4 @@
-# PyQt6 + FastAPI + YOLO HQ-SAM
+## PyQt6 + FastAPI + YOLO HQ-SAM
 PyQt6 client based on FastAPI Integration for HQ-SAM Object Detection
 
 ## 💾 Ссылки на Материалы и Результаты:
