@@ -1,4 +1,4 @@
-# X-Rays Model HQ-SAM App [v2.1, 2023] 🖼️
+## X-Rays Model HQ-SAM App [v2.1, 2023] 🖼️
 
 
 <details>
@@ -8,16 +8,16 @@
 </p>
 </details>
 
-## Overview
+### Overview
 The X-Rays Model HQ-SAM App is a Python application that allows you to load, predict, and save X-ray images using deep learning models. This README provides an overview of the app's features, how to use it, and the technologies it utilizes.
 
-## Features 🌟
+### Features 🌟
 - Load X-ray images from your local disk.
 - Choose from a list of available deep learning models.
 - Predict and display the results on loaded images.
 - Save the processed images to your local disk.
 
-## Technologies and Frameworks 🚀
+### Technologies and Frameworks 🚀
 The X-Rays Model HQ-SAM App is built using the following technologies and frameworks:
 
 - Python 🐍: The core programming language used for the application.
@@ -27,7 +27,7 @@ The X-Rays Model HQ-SAM App is built using the following technologies and framew
 - OS 🖥️: A Python module for working with the operating system.
 - Qt 📊: A cross-platform C++ framework for creating GUIs.
 
-## How to Use
+### How to Use
 1. Load an X-ray image by clicking the "IMAGE LOAD" button.
 2. Choose a deep learning model from the "MODELS" dialog.
 3. Click the "PREDICT" button to run predictions on the loaded image.
@@ -37,11 +37,11 @@ The X-Rays Model HQ-SAM App is built using the following technologies and framew
 ## Running the App
 To run the app, make sure you have Python and the required dependencies installed. Then, execute the `main_v50.py` script. You can choose a server by clicking the "SERVER" button.
 
-## Note
+### Note
 - Make sure to select a model before predicting an image.
 - Ensure that an image is loaded before making predictions.
 
-## License
+### License
 This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.
 
 ---
