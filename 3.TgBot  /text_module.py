@@ -1,7 +1,7 @@
 # text_module.py
 from aiogram import types
 
-# Register bot commands
+# Register All bot commands
 commands = [
     types.BotCommand(command="/start", description="♻️ Запустить бота"),
     types.BotCommand(command="/help", description="💡 Показать справку"),
