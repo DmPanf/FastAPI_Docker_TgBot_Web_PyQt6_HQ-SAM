@@ -1,4 +1,4 @@
-# bot_code.py
+# python bot_code.py
 
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
@@ -71,15 +71,15 @@ class AccessMiddleware(BaseMiddleware):  # БЛОКИРОВКА ПОЛЬЗОВА
             #return True  # True означает, что дальнейшая обработка сообщения не требуется
         return False  # Для остальных случаев пропускаем сообщение для дальнейшей обработки 
 
-#logging.basicConfig(level=logging.DEBUG)  # Устанавливаем уровень логирования DEBUG !!!
-#logging.basicConfig(level=logging.INFO)  # Устанавливаем уровень логирования INFO
+# logging.basicConfig(level=logging.DEBUG)  # Устанавливаем уровень логирования DEBUG !!!
+# logging.basicConfig(level=logging.INFO)  # Устанавливаем уровень логирования INFO
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 dp.middleware.setup(AccessMiddleware(ACCESS_LIST))
 
-#API_URL = 'http://api-serv.ru:8001'
-#API_URL = 'http://195.91.179.130:33021'
-#API_URL = os.getenv("API_URL")
+# API_URL = 'http://api-serv.ru:8001'
+# API_URL = 'http://X.X.X.X:33021'
+# API_URL = os.getenv("API_URL")
 servers_list = load_servers_list(bot)
 
 
