@@ -1,4 +1,6 @@
+# python main_v21.py
 # Загрузка и Predict по постоянным константам: ссылке и модели
+
 import sys
 import os
 import requests
