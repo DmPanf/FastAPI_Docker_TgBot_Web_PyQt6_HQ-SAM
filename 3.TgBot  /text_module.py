@@ -1,4 +1,4 @@
-# text_module.py
+# python text_module.py
 from aiogram import types
 
 # Register All bot commands
