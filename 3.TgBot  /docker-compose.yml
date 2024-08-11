@@ -8,10 +8,10 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./data:/app/data  # монтируем уже существующий volume для данных
-      - .:/app        # монтируем код бота
+      - ./data:/app/data  ## монтируем уже существующий volume для данных
+      - .:/app            ## монтируем код бота
     env_file:
       - .env
-#    restart: always
+##    restart: always
     environment:
-      - PYTHONUNBUFFERED=1  # Python не будет буферизовать вывод: можно видеть логи и другой вывод приложения в реальном времени
+      - PYTHONUNBUFFERED=1  ## Python не будет буферизовать вывод: можно видеть логи и другой вывод приложения в реальном времени
