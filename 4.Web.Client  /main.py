@@ -1,4 +1,4 @@
-# v1.2
+# v1.3
 
 from ultralytics import YOLO
 import cv2
